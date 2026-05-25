@@ -36,3 +36,9 @@ yarn-error.log*
 next-env.d.ts
 
 /.idea/
+
+# next
+/ersc-overlays/.next
+/ersc-overlays/node_modules
+/ersc-overlays/out
+/ersc-overlays/build
