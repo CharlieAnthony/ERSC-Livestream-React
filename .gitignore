@@ -25,7 +25,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env*.local
+ersc-overlays/.env.local
 .env
 
 # vercel
@@ -42,4 +42,4 @@ next-env.d.ts
 /ersc-overlays/node_modules
 /ersc-overlays/out
 /ersc-overlays/build
-.env.local
+ersc-overlays/.env.local
