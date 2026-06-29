@@ -1,6 +1,6 @@
 "use client";
 
-import MarqueeText from "react-marquee-text";
+import Marquee from "react-fast-marquee";
 
 import * as styles from "./page.css";
 import Image from "next/image";
@@ -42,9 +42,9 @@ const TitleBar = ({ title, tickerText }: { title: string, tickerText: string }) 
 			<Image src="/rscast/castersscreen/titlebar-top.png" alt="Title bar top" className={styles.titleBarTop} width={1926} height={327} />
 			<span className={styles.titleBarTitle}>{title.toUpperCase()}</span>
 			<div className={styles.scrollingTextWrapper}>
-				<MarqueeText className={styles.scrollingText} playOnlyInView={false} textSpacing="30px" direction="right">
+				<Marquee className={styles.scrollingText} direction="left">
 					{tickerText.toUpperCase()}
-				</MarqueeText>
+				</Marquee>
 			</div>
 		</div>
 	)
