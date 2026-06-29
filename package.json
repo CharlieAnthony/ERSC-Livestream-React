@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "react-marquee-text": "^1.0.6"
+    "react-fast-marquee": "^1.6.5"
   }
 }
