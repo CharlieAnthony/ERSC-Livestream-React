@@ -60,8 +60,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-
 
+      - name: Clean install
+        run: |
+          rm -rf node_modules package-lock.json
+          npm cache clean --force
+          
       - name: Install dependencies
-        run: npm ci --include=optional
+        run: npm install --include=optional --force
 
       - name: Rebuild native modules
         run: npm rebuild lightningcss
