@@ -20,7 +20,7 @@ export default function CasterOverlay() {
 	useEffect(() => {
 		if (sheet) {
 			// eslint-disable-next-line react-hooks/set-state-in-effect
-			setIsCrossConference(getCell(sheet, "M3") == "TRUE");
+			setIsCrossConference(getCell(sheet, "T3") == "TRUE");
 		}
 	}, [sheet]);
 
@@ -35,10 +35,10 @@ export default function CasterOverlay() {
 					   width={1920} height={1080} />}
 			<Image src="/rscast/RSCastLogo.png" alt="RSCast Logo" className={styles.logo} width={200} height={53} />
 			<Image src="/rscast/Sponsors.png" alt="RSCast Logo" className={styles.sponsors} width={558} height={61} />
-			<Image src={getCell(sheet, "M2")} alt="Tier Logo" className={styles.tier} width={80} height={92} />
+			<Image src={getCell(sheet, "T2")} alt="Tier Logo" className={styles.tier} width={80} height={92} />
 			<Image src={"https://images.rsc-community.com/EU/Logo.png"} alt="RSC Logo" className={styles.rscLogo}
 				   width={206} height={206} />
-			<span className={styles.title}>{getCell(sheet, "N2").toUpperCase()}</span>
+			<span className={styles.title}>{getCell(sheet, "U2").toUpperCase()}</span>
 
 			{Array.from({ length: 10 }, (_, i) => (
 				<Result key={"left" + i} index={i} type={isCrossConference ? backgrounds.CROSSCONFERENCE : backgrounds.GLACES} sheet={sheet} left />
@@ -92,7 +92,7 @@ const Result: React.FC<ResultProps> = ({ index, type, left, sheet }) => {
 			/>
 			<div className={styles.logoLeft}>
 				<Image
-					src={getCell(sheet, "K" + row)}
+					src={getCell(sheet, "R" + row)}
 					alt="Team Logo"
 					width={120}
 					height={120}
@@ -105,7 +105,7 @@ const Result: React.FC<ResultProps> = ({ index, type, left, sheet }) => {
 			</div>
 			<div className={styles.logoRight}>
 				<Image
-					src={getCell(sheet, "L" + row)}
+					src={getCell(sheet, "S" + row)}
 					alt="Team Logo"
 					width={120}
 					height={120}
@@ -116,9 +116,9 @@ const Result: React.FC<ResultProps> = ({ index, type, left, sheet }) => {
 					}}
 				/>
 			</div>
-			<span className={styles.leftTeamName}>{getCell(sheet, "H" + row).toUpperCase()}</span>
-			<span className={styles.rightTeamName}>{getCell(sheet, "J" + row).toUpperCase()}</span>
-			<span className={styles.score}>{getCell(sheet, "I" + row)}</span>
+			<span className={styles.leftTeamName}>{getCell(sheet, "O" + row)}</span>
+			<span className={styles.rightTeamName}>{getCell(sheet, "Q" + row)}</span>
+			<span className={styles.score}>{getCell(sheet, "P" + row)}</span>
 		</div>
 	);
 };
