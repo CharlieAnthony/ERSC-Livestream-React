@@ -116,8 +116,8 @@ const Result: React.FC<ResultProps> = ({ index, type, left, sheet }) => {
 					}}
 				/>
 			</div>
-			<span className={styles.leftTeamName}>{getCell(sheet, "H" + row)}</span>
-			<span className={styles.rightTeamName}>{getCell(sheet, "J" + row)}</span>
+			<span className={styles.leftTeamName}>{getCell(sheet, "H" + row).toUpperCase()}</span>
+			<span className={styles.rightTeamName}>{getCell(sheet, "J" + row).toUpperCase()}</span>
 			<span className={styles.score}>{getCell(sheet, "I" + row)}</span>
 		</div>
 	);
