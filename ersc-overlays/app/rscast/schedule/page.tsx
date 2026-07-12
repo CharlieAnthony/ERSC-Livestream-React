@@ -20,7 +20,7 @@ export default function CasterOverlay() {
 	useEffect(() => {
 		if (sheet) {
 			// eslint-disable-next-line react-hooks/set-state-in-effect
-			setIsCrossConference(getCell(sheet, "T3") == "TRUE");
+			setIsCrossConference(getCell(sheet, "R2") == "Cross Conference");
 		}
 	}, [sheet]);
 
@@ -35,7 +35,7 @@ export default function CasterOverlay() {
 					   width={1920} height={1080} />}
 			<Image src="/rscast/RSCastLogo.png" alt="RSCast Logo" className={styles.logo} width={200} height={53} />
 			<Image src="/rscast/Sponsors.png" alt="RSCast Logo" className={styles.sponsors} width={558} height={61} />
-			<Image src={getCell(sheet, "T2")} alt="Tier Logo" className={styles.tier} width={80} height={92} />
+			<Image src={getCell(sheet, "U3")} alt="Tier Logo" className={styles.tier} width={80} height={92} />
 			<Image src={"https://images.rsc-community.com/EU/Logo.png"} alt="RSC Logo" className={styles.rscLogo}
 				   width={206} height={206} />
 			<span className={styles.title}>{getCell(sheet, "U2").toUpperCase()}</span>
@@ -96,7 +96,7 @@ const Result: React.FC<ResultProps> = ({ index, type, left, sheet }) => {
 			/>
 			<div className={styles.logoLeft}>
 				<Image
-					src={getCell(sheet, "R" + row)}
+					src={getCell(sheet, "S" + row)}
 					alt="Team Logo"
 					width={120}
 					height={120}
@@ -116,7 +116,7 @@ const Result: React.FC<ResultProps> = ({ index, type, left, sheet }) => {
 			/>
 			<div className={styles.logoRight}>
 				<Image
-					src={getCell(sheet, "S" + row)}
+					src={getCell(sheet, "T" + row)}
 					alt="Team Logo"
 					width={120}
 					height={120}
