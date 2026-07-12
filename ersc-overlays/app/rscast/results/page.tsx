@@ -77,18 +77,22 @@ const Result: React.FC<ResultProps> = ({ index, type, left, sheet }) => {
 	const row: string = (!left ? 10 + (2 + index) : (2 + index)).toString();
 
 	return (
-		<div className={styles.result} style={
-			{
-				"--dynamic-top": `${100 + (index * 82)}px`,
-				"--dynamic-left": `${!!left ? "50" : "1095"}px`,
-			} as React.CSSProperties
-		}>
+		<div
+			className={styles.result}
+			style={
+				{
+					"--dynamic-top": `${100 + index * 82}px`,
+					"--dynamic-left": `${!!left ? "50" : "1095"}px`,
+				} as React.CSSProperties
+			}
+		>
+			<Image src={back} alt="Result background" width={781} height={174} />
 			<Image
-				src={back}
-				alt="Result background"
-				width={781}
-				height={174}
-
+				src="/rscast/schedule/maskLeft.png"
+				alt="background colour"
+				width={70}
+				height={65}
+				className={styles.logoBackgroundLeft}
 			/>
 			<div className={styles.logoLeft}>
 				<Image
@@ -103,6 +107,13 @@ const Result: React.FC<ResultProps> = ({ index, type, left, sheet }) => {
 					}}
 				/>
 			</div>
+			<Image
+				src="/rscast/schedule/maskRight.png"
+				alt="background colour"
+				width={70}
+				height={65}
+				className={styles.logoBackgroundRight}
+			/>
 			<div className={styles.logoRight}>
 				<Image
 					src={getCell(sheet, "L" + row)}

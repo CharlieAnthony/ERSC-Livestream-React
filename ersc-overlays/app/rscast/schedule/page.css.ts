@@ -67,6 +67,14 @@ export const logoLeft = style({
 	alignItems: "center",
 });
 
+export const logoBackgroundLeft = style({
+	position: "absolute",
+	top: "76px",
+	left: "20px",
+	width: "70px",
+	height: "67px",
+});
+
 export const logoRight = style({
 	position: "absolute",
 	top: "77px",
@@ -79,6 +87,15 @@ export const logoRight = style({
 	display: "flex",
 	justifyContent: "center",
 	alignItems: "center",
+});
+
+
+export const logoBackgroundRight = style({
+	position: "absolute",
+	top: "76px",
+	right: "20px",
+	width: "70px",
+	height: "67px",
 });
 
 export const leftTeamName = style({
