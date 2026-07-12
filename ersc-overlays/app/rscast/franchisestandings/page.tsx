@@ -6,7 +6,6 @@ import { getCell } from "@/lib/callHelpers";
 import Image from "next/image";
 import { useGoogleSheet } from "@/hooks/useGoogleSheet";
 import { useState, useEffect } from "react";
-import { goalDiff, goalsAgainst, winLoss, winPercent } from "./page.css";
 import React from "react";
 
 export default function CasterOverlay() {

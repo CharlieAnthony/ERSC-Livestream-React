@@ -1,18 +1,8 @@
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ReactNode } from "react";
 import "./fonts.css";
 
-// const geistSans = Geist({
-// 	variable: "--font-geist-sans",
-// 	subsets: ["latin"],
-// });
-//
-// const geistMono = Geist_Mono({
-// 	variable: "--font-geist-mono",
-// 	subsets: ["latin"],
-// });
 
 export const metadata: Metadata = {
 	title: "",
@@ -30,6 +20,7 @@ export default function RootLayout({
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
 				<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet" />
 				<link rel="stylesheet" href="https://typekit.net" />
+				<title>rsc.canth.dev</title>
 			</head>
 			<body className="min-h-full flex flex-col">{children}</body>
 		</html>
