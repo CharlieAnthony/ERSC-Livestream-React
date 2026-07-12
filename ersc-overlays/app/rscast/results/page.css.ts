@@ -99,11 +99,11 @@ export const logoBackgroundRight = style({
 
 export const leftTeamName = style({
 	position: "absolute",
-	top: "90px",
+	top: "94px",
 	left: "100px",
 	width: "225px",
 	height: "40px",
-	fontSize: "26px",
+	fontSize: "22px",
 	color: "white",
 	textAlign: "center",
 	fontFamily: "Anta",
@@ -114,11 +114,11 @@ export const leftTeamName = style({
 
 export const rightTeamName = style({
 	position: "absolute",
-	top: "90px",
+	top: "94px",
 	right: "100px",
 	width: "225px",
 	height: "40px",
-	fontSize: "26px",
+	fontSize: "22px",
 	color: "white",
 	textAlign: "center",
 	fontFamily: "Anta",
