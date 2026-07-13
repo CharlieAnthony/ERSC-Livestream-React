@@ -19,15 +19,16 @@ export const back = style({
 export const week = style({
 	position: "fixed",
 	top: "38px",
-	left: "1600px",
-	width: "245px",
+	left: "1596px",
+	width: "246px",
 	height: "60px",
 	fontSize: "36px",
 	color: "#131313",
 	textAlign: "center",
-	fontFamily: "ApotekMedium",
+	fontFamily: "ApotekBlack",
 	overflow: "hidden",
 	textWrap: "nowrap",
+	verticalAlign: "middle",
 });
 
 export const awardContainer = style({
