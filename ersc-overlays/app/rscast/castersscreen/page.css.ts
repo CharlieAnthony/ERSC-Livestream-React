@@ -47,7 +47,7 @@ export const scrollingText = style({
 
 export const scrollingTextWrapper = style({
 	position: "absolute",
-	top: "180px",
+	top: "175px",
 	left: "50px",
 	width: "1780px",
 	overflow: "hidden",
