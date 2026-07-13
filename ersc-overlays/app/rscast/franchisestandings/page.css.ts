@@ -8,14 +8,6 @@ export const back = style({
 	height: "1080px",
 });
 
-export const confLogo = style({
-	position: "fixed",
-	left: "75px",
-	top: "25px",
-	width: "100px",
-	height: "100px",
-});
-
 export const title = style({
 	position: "fixed",
 	top: "30px",
@@ -190,22 +182,4 @@ export const winLoss = style({
 	zIndex: 3,
 	overflow: "hidden",
 	textWrap: "nowrap",
-});
-
-export const lastSixA = style({
-	position: "absolute",
-	top: "52px",
-	left: "1862px",
-});
-
-export const lastSixB = style({
-	position: "absolute",
-	top: "72px",
-	left: "1862px",
-});
-
-export const lastSixC = style({
-	position: "absolute",
-	top: "92px",
-	left: "1862px",
 });
