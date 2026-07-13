@@ -179,7 +179,7 @@ export const goalDiff = style({
 
 export const winLoss = style({
 	position: "absolute",
-	top: "44px",
+	top: "42px",
 	left: "1553px",
 	width: "320px",
 	height: "55px",
