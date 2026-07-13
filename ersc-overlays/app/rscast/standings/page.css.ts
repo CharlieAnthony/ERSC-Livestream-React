@@ -89,11 +89,11 @@ export const logoContainer = style({
 
 export const teamName = style({
 	position: "absolute",
-	top: "55px",
+	top: "56px",
 	left: "210px",
 	width: "420px",
 	height: "40px",
-	fontSize: "36px",
+	fontSize: "34px",
 	color: "white",
 	textAlign: "left",
 	fontFamily: "Anta",
