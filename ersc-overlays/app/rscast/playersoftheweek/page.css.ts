@@ -52,6 +52,7 @@ export const firstName = style({
 	fontFamily: "ApotekMedium",
 	overflow: "hidden",
 	textWrap: "nowrap",
+	bottom: "2px",
 });
 
 export const firstStat = style({
@@ -71,16 +72,24 @@ export const firstStat = style({
 });
 
 export const logo = style({
+	width: "150px",
+	height: "auto",
+});
+
+export const imageContainer = style({
 	position: "relative",
-	top: "24px",
+	top: "20px",
 	left: "104px",
 	width: "150px",
 	height: "150px",
+	display: "flex",
+	alignItems: "center",
+	justifyContent: "center",
 });
 
 export const secondName = style({
 	position: "relative",
-	top: "132px",
+	top: "133px",
 	display: "flex",
 	alignItems: "center",
 	justifyContent: "center",
@@ -96,13 +105,13 @@ export const secondName = style({
 
 export const secondStat = style({
 	position: "relative",
-	top: "116px",
+	top: "113px",
 	display: "flex",
 	alignItems: "center",
 	justifyContent: "center",
 	width: "100%",
 	height: "40px",
-	fontSize: "28px",
+	fontSize: "32px",
 	color: "white",
 	textAlign: "center",
 	fontFamily: "ApotekBlack",
@@ -112,7 +121,7 @@ export const secondStat = style({
 
 export const thirdName = style({
 	position: "relative",
-	top: "114px",
+	top: "115px",
 	display: "flex",
 	alignItems: "center",
 	justifyContent: "center",
@@ -128,13 +137,13 @@ export const thirdName = style({
 
 export const thirdStat = style({
 	position: "relative",
-	top: "98px",
+	top: "95px",
 	display: "flex",
 	alignItems: "center",
 	justifyContent: "center",
 	width: "100%",
 	height: "40px",
-	fontSize: "28px",
+	fontSize: "32px",
 	color: "white",
 	textAlign: "center",
 	fontFamily: "ApotekBlack",

@@ -136,7 +136,9 @@ const Award = ({ index, firstName, firstStat, secondName, secondStat, thirdName,
 		>
 			<span className={styles.firstName}>{firstName.toUpperCase()}</span>
 			<span className={styles.firstStat}>{firstStat}</span>
-			<Image src={logoSrc} alt="Logo" className={styles.logo} width={150} height={150} />
+			<div className={styles.imageContainer}>
+				<Image src={logoSrc} alt="Logo" className={styles.logo} width={150} height={150} />
+			</div>
 			<span className={styles.secondName}>{secondName.toUpperCase()}</span>
 			<span className={styles.secondStat}>{secondStat}</span>
 			<span className={styles.thirdName}>{thirdName.toUpperCase()}</span>
@@ -144,7 +146,3 @@ const Award = ({ index, firstName, firstStat, secondName, secondStat, thirdName,
 		</div>
 	);
 }
-
-
-
-
